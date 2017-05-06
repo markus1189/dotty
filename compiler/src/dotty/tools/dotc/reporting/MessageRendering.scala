@@ -76,6 +76,7 @@ trait MessageRendering {
 
   /** The column markers aligned under the error */
   def columnMarker(pos: SourcePosition, offset: Int)(implicit ctx: Context): String = {
+    // TODO!
     val prefix = " " * (offset - 1)
     val whitespace = " " * pos.startColumn
     val carets = Red {
